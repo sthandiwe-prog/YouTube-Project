@@ -9,8 +9,18 @@ body {
   font-family: roboto sans-serif;
 }
 
+nav div:nth-child(1) {
+  display: flex;
+  gap: 20px;
+}
+
+nav div:nth-child(3) {
+  display: flex;
+  gap: 35px;
+}
+
 .navBar {
-  padding: 10px 35px;
+  padding: 30px 35px;
   background: white;
   position: fixed;
   top: 0;
@@ -18,24 +28,34 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 30px;
   display: flex;
   justify-content: space-between;
 }
 
 .bars {
-  font-size: 26px;
+  font-size: 19px;
   margin-top: 3px;
+  border-radius: 50%;
+  padding: 10px 10px;
 }
+
+.bars:hover {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
 .youtube-logo {
   width: 120px;
-  height: auto;
+  height: 30px;
+  margin-top: 6px;
 }
 
 .search-bar {
   position: relative;
   max-width: 500px;
   width: 50%;
-  height: 35px;
+  height: 40px;
   display: flex;
 }
 
@@ -43,43 +63,59 @@ body {
   width: 100%;
   border-radius: 50px 0 0 50px;
   padding-left: 20px;
+  border: 0.7px solid #d3d3d3;
+  outline: none;
 }
 
 .search-btn {
   font-size: 20px;
   padding: 0 20px;
   border-radius: 0 50px 50px 0;
+  border: 0.7px solid #d3d3d3;
 }
 
 .video-icon {
-  width: 36px;
-  height: 38px;
-  margin-top: 5px;
-}
-
-.bell-icon {
-  height: 31px;
   width: 30px;
-  margin-top: 10px;
-}
-
-.microphone-icon {
-  font-size: 26px;
-  margin: 5px 0 0 30px;
-}
-
-.profile {
-  width: 50px;
-  height: auto;
+  height: 30px;
+  margin-top: 12px;
   border-radius: 50%;
 }
 
-nav div:nth-child(1) {
-  display: flex;
-  gap: 35px;
+.video-icon:hover {
+  cursor: pointer;
+  background: #f0f0f0;
 }
 
-nav div:nth-child(3) {
-  display: flex;
-  gap: 35px;
+.bell-icon {
+  height: 30px;
+  width: 30px;
+  margin-top: 14px;
+  border-radius: 50%;
+}
+
+.bell-icon:hover {
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.microphone-icon {
+  position: absolute;
+  font-size: 19px;
+  margin: 0 0 10px 30px;
+  background: #f0f0f0;
+  padding: 13px 15px;
+  border-radius: 50%;
+}
+
+.microphone-icon:hover {
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.349);
+  border-radius: 50%;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 6px;
 }
